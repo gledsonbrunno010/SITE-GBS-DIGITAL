@@ -1,0 +1,73 @@
+import React from 'react';
+import { Clock, PenTool, TrendingUp, Smartphone, Shield, BarChart3 } from 'lucide-react';
+import { Benefit } from '../types';
+import { Button } from './Button';
+
+const benefitsList: Benefit[] = [
+  {
+    title: "Entrega Rápida",
+    description: "Site pronto em até 48 horas, sem atrasos desnecessários. Comece a vender antes do fim de semana.",
+    icon: Clock
+  },
+  {
+    title: "Design Persuasivo",
+    description: "Copies que tocam emocionalmente, criando conexão e urgência para converter visitantes em clientes fiéis.",
+    icon: PenTool
+  },
+  {
+    title: "Valor Percebido Alto",
+    description: "Sites premium que elevam sua marca, fazendo você parecer maior, mais estruturado e mais confiável.",
+    icon: TrendingUp
+  },
+  {
+    title: "Otimização Total",
+    description: "SEO otimizado para o Google, carregamento ultrarrápido e responsividade móvel perfeita.",
+    icon: Smartphone
+  },
+  {
+    title: "Segurança e Suporte",
+    description: "Integrações seguras com ferramentas de vendas e suporte contínuo para sua tranquilidade.",
+    icon: Shield
+  },
+  {
+    title: "Foco em Leads",
+    description: "Perfeito para B2B ou vendedores não B2B, com elementos estrategicamente posicionados para gerar contatos.",
+    icon: BarChart3
+  }
+];
+
+export const Benefits: React.FC = () => {
+  return (
+    <section id="beneficios" className="py-24 bg-gbs-dark relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Por Que Escolher a <span className="text-gbs-green">GBS Digital</span>?
+          </h2>
+          <p className="text-gray-400 text-lg">
+            Sinta a emoção de ver seu tráfego aumentar e vendas dispararem, com um investimento que se paga sozinho.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {benefitsList.map((benefit, index) => (
+            <div 
+              key={index}
+              className="bg-gbs-card p-8 rounded-2xl border border-white/5 hover:border-gbs-green/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(34,197,94,0.2)] group"
+            >
+              <div className="bg-gbs-black w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gbs-green transition-colors duration-300">
+                <benefit.icon className="w-7 h-7 text-gbs-green group-hover:text-black" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
+              <p className="text-gray-400 leading-relaxed">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 text-center">
+            <Button text="Quero Meu Site Profissional" variant="secondary" />
+        </div>
+      </div>
+    </section>
+  );
+};
