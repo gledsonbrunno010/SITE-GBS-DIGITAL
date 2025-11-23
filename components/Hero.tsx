@@ -60,7 +60,7 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-xl overflow-hidden shadow-[0_0_50px_rgba(34,197,94,0.15)] border border-white/10 group">
               {/* Abstract UI representation */}
               <img
-                src="/assets/images/hero-portrait.jpg"
+                src="/assets/images/hero-new.png"
                 alt="Michael Cardoso - GBS Digital"
                 className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
               />
