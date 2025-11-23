@@ -60,8 +60,8 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-xl overflow-hidden shadow-[0_0_50px_rgba(34,197,94,0.15)] border border-white/10 group">
                 {/* Abstract UI representation */}
                 <img 
-                    src="https://images.unsplash.com/photo-1481487484168-9b930d5b7960?q=80&w=2671&auto=format&fit=crop" 
-                    alt="Desenvolvimento de Sites" 
+                    src="/assets/images/hero-dashboard.png" 
+                    alt="Desenvolvimento de Sites Profissional - Dashboard Interativo" 
                     className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-gbs-green/20 to-transparent pointer-events-none"></div>
