@@ -26,16 +26,16 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-              Transforme Seu Negócio com um <span className="text-transparent bg-clip-text bg-gradient-to-r from-gbs-green to-white">Site Profissional</span> em Até 48 Horas
+              Fechamos o Site da Sua Empresa em até <span className="text-transparent bg-clip-text bg-gradient-to-r from-gbs-green to-white">48 Horas</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl">
-              Criação de sites personalizados para empresas B2B e vendedores independentes. Aumente suas vendas e credibilidade online agora!
+              Atendemos dentistas, Consórcio, empresas de Comunicação Visual e Imobiliárias com site feito em 48 horas.
             </p>
 
             <div className="border-l-4 border-gbs-green pl-6 py-2 bg-white/5 rounded-r-lg">
               <p className="text-gray-300 italic font-medium">
-                "Imagine o orgulho de ver seu negócio prosperar com um site que atrai clientes ideais e fecha negócios enquanto você descansa."
+                "Seu concorrente tem um site enquanto sua empresa deixa dinheiro na mesa. Entrego em 48 horas um site que converte leads em clientes reais no seu whatsapp."
               </p>
             </div>
 
