@@ -9,15 +9,7 @@ import { Footer } from './components/Footer';
 import { WHATSAPP_LINK } from './constants';
 import { MessageCircle } from 'lucide-react';
 
-import { useEffect } from 'react';
-import { initPixel, trackPageView } from './utils/pixel';
-
 function App() {
-  useEffect(() => {
-    initPixel();
-    trackPageView();
-  }, []);
-
   return (
     <div className="min-h-screen bg-gbs-black text-white selection:bg-gbs-green selection:text-black">
       <Navbar />
