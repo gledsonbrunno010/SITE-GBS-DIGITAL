@@ -35,11 +35,11 @@ export const Process: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 text-center lg:text-left">
               Criamos o seu site em <br />
               <span className="text-gbs-green">Tempo Record</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+            <p className="text-gray-400 text-lg mb-8 leading-relaxed text-center lg:text-left">
               Não espere mais para ter um site totalmente profissional e com poder de converter o usuário em Cliente Real para sua Empresa.
             </p>
 
@@ -49,7 +49,9 @@ export const Process: React.FC = () => {
               </p>
             </div>
 
-            <Button text="Iniciar Projeto Agora" variant="primary" />
+            <div className="flex justify-center lg:justify-start">
+              <Button text="Iniciar Projeto Agora" variant="primary" />
+            </div>
           </div>
 
           <div className="space-y-6">

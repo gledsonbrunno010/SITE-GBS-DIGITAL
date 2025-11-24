@@ -19,29 +19,46 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6 lg:space-y-8"
           >
-            <div className="inline-block px-4 py-1.5 rounded-full border border-gbs-green/30 bg-gbs-green/10 text-gbs-green text-xs font-bold uppercase tracking-wider mb-2">
-              Oferta Limitada: Entrega em 48h
+            {/* Oferta badge - centered on mobile */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="inline-block px-4 py-1.5 rounded-full border border-gbs-green/30 bg-gbs-green/10 text-gbs-green text-xs font-bold uppercase tracking-wider">
+                Oferta Limitada: Entrega em 48h
+              </div>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+            {/* Headline - centered on mobile */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight text-center lg:text-left">
               Fechamos o Site da Sua Empresa em até <span className="text-transparent bg-clip-text bg-gradient-to-r from-gbs-green to-white">48 Horas</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl">
+            {/* Hero image - visible on mobile, below headline */}
+            <div className="lg:hidden relative rounded-xl overflow-hidden shadow-[0_0_50px_rgba(34,197,94,0.15)] border border-white/10">
+              <img
+                src="/assets/images/hero-new.png"
+                alt="Michael Cardoso - GBS Digital"
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-gbs-green/20 to-transparent pointer-events-none"></div>
+            </div>
+
+            {/* Sub-headline */}
+            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-2xl text-center lg:text-left lg:mx-0 mx-auto">
               Atendemos dentistas, Consórcio, empresas de Comunicação Visual e Imobiliárias com site feito em 48 horas.
             </p>
 
+            {/* Quote box */}
             <div className="border-l-4 border-gbs-green pl-6 py-2 bg-white/5 rounded-r-lg">
               <p className="text-gray-300 italic font-medium">
                 "Seu concorrente tem um site enquanto sua empresa deixa dinheiro na mesa. Entrego em 48 horas um site que converte leads em clientes reais no seu whatsapp."
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <Button text="Fale Conosco Agora" variant="primary" />
-              <div className="flex items-center gap-2 text-sm text-gray-400 px-4">
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-sm text-gray-400 px-4">
                 <span className="flex h-3 w-3 relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gbs-green opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-gbs-green"></span>
@@ -51,6 +68,7 @@ export const Hero: React.FC = () => {
             </div>
           </motion.div>
 
+          {/* Desktop hero image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -58,7 +76,6 @@ export const Hero: React.FC = () => {
             className="hidden lg:block relative"
           >
             <div className="relative rounded-xl overflow-hidden shadow-[0_0_50px_rgba(34,197,94,0.15)] border border-white/10 group">
-              {/* Abstract UI representation */}
               <img
                 src="/assets/images/hero-new.png"
                 alt="Michael Cardoso - GBS Digital"
