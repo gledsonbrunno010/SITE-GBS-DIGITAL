@@ -17,8 +17,8 @@ const testimonials: Testimonial[] = [
     image: "/assets/images/michael-cardoso.jpg"
   },
   {
-    name: "Carlos Eduardo",
-    role: "CEO, Logística Rápida",
+    name: "Lucas Sales",
+    role: "Representante de Consórcio em BSB",
     quote: "Velocidade impressionante. Precisávamos de um site para uma campanha urgente e eles entregaram antes do prazo com uma qualidade absurda. Recomendo de olhos fechados."
   }
 ];
