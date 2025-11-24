@@ -75,7 +75,38 @@
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2288074398375616');
-    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var trackedSections = new Set();
+      var observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 // Trigger when 50% of the section is visible
+      };
+
+      var observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var sectionId = entry.target.id;
+            if (!trackedSections.has(sectionId)) {
+              trackedSections.add(sectionId);
+              fbq('trackCustom', 'ViewSection', { section_name: sectionId });
+              // console.log('Tracked section:', sectionId); // For debugging
+            }
+          }
+        });
+      }, observerOptions);
+
+      var sections = ['hero', 'beneficios', 'como-funciona', 'depoimentos', 'contato'];
+      sections.forEach(function (id) {
+        var element = document.getElementById(id);
+        if (element) {
+          observer.observe(element);
+        }
+      });
+    });
   </script>
   <!-- End Meta Pixel Code -->
 </head>
@@ -83,7 +114,7 @@
 <body class="bg-gbs-black text-white antialiased selection:bg-gbs-green selection:text-black">
   <!-- Meta Pixel Code (noscript) -->
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2288074398375616&ev=PageView&noscript=1" /></noscript>
+      src="https://www.facebook.com/tr?id=2288074398375616&ev=ViewContent&noscript=1" /></noscript>
   <!-- End Meta Pixel Code (noscript) -->
 
   <div id="root"></div>

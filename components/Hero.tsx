@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Gradient & Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
