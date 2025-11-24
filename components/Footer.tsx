@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, Mail, Phone, Instagram } from 'lucide-react';
+import { Mail, Phone, Instagram } from 'lucide-react';
 import { WHATSAPP_LINK } from '../constants';
 
 export const Footer: React.FC = () => {
@@ -7,12 +7,10 @@ export const Footer: React.FC = () => {
     <footer className="bg-gbs-black pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          
+
           <div className="col-span-1 md:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="bg-gbs-green p-1.5 rounded text-black">
-                <Rocket size={24} />
-              </div>
+              <img src="/assets/images/logo.png" alt="GBS Digital Logo" className="h-10 w-auto object-contain" />
               <span className="text-2xl font-bold text-white">GBS <span className="text-gbs-green">Digital</span></span>
             </a>
             <p className="text-gray-400 mb-6 max-w-sm">
@@ -49,7 +47,7 @@ export const Footer: React.FC = () => {
                 <span>+55 61 99192-2993</span>
               </li>
               <li className="text-gray-400 flex items-start gap-3">
-                 <Mail size={18} className="mt-1 text-gbs-green" />
+                <Mail size={18} className="mt-1 text-gbs-green" />
                 <span>contato@gbsdigital.com</span>
               </li>
             </ul>
