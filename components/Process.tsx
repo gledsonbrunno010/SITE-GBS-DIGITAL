@@ -43,12 +43,15 @@ export const Process: React.FC = () => {
               Não espere mais para ter um site totalmente profissional e com poder de converter o usuário em Cliente Real para sua Empresa.
             </p>
 
+
             {/* Office scene image */}
-            <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+            <div className="mb-8 rounded-xl overflow-hidden shadow-lg relative">
+              {/* Background blur decoration behind the image */}
+              <div className="absolute -inset-4 bg-gbs-green/10 rounded-full blur-[60px] -z-10"></div>
               <img
                 src="/assets/images/process-office.png"
                 alt="Equipe GBS Digital trabalhando"
-                className="w-full h-auto"
+                className="w-full h-auto relative z-10"
               />
             </div>
 
