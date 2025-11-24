@@ -6,7 +6,7 @@ import { Button } from './Button';
 const benefitsList: Benefit[] = [
   {
     title: "Entrega Rápida",
-    description: "Site pronto em até 48 horas, sem atrasos desnecessários. Comece a vender antes do fim de semana.",
+    description: "Criamos seu site em até 48 Horas para você posicionar sua empresa de forma profissional o quanto antes.",
     icon: Clock
   },
   {
@@ -16,7 +16,7 @@ const benefitsList: Benefit[] = [
   },
   {
     title: "Valor Percebido Alto",
-    description: "Sites premium que elevam sua marca, fazendo você parecer maior, mais estruturado e mais confiável.",
+    description: "Aqui você tem um site Premium, valorizando ainda mais a sua empresa.",
     icon: TrendingUp
   },
   {
@@ -31,7 +31,7 @@ const benefitsList: Benefit[] = [
   },
   {
     title: "Foco em Leads",
-    description: "Perfeito para B2B ou vendedores não B2B, com elementos estrategicamente posicionados para gerar contatos.",
+    description: "Perfeito para empresas ou vendedores autônomos, com elementos estrategicamente posicionados para gerar contatos.",
     icon: BarChart3
   }
 ];
@@ -45,13 +45,13 @@ export const Benefits: React.FC = () => {
             Por Que Escolher a <span className="text-gbs-green">GBS Digital</span>?
           </h2>
           <p className="text-gray-400 text-lg">
-            Sinta a emoção de ver seu tráfego aumentar e vendas dispararem, com um investimento que se paga sozinho.
+            Somos especialistas em criação de sites para empresas. Aqui seu investimento se paga sozinho.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefitsList.map((benefit, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gbs-card p-8 rounded-2xl border border-white/5 hover:border-gbs-green/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(34,197,94,0.2)] group"
             >
@@ -65,7 +65,7 @@ export const Benefits: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-            <Button text="Quero Meu Site Profissional" variant="secondary" />
+          <Button text="Quero Meu Site Profissional" variant="secondary" />
         </div>
       </div>
     </section>

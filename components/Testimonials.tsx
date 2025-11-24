@@ -5,14 +5,15 @@ import { Star } from 'lucide-react';
 
 const testimonials: Testimonial[] = [
   {
-    name: "João Silva",
-    role: "Diretor Comercial, TechSol B2B",
-    quote: "A GBS Digital transformou minha presença online em 48 horas! A seriedade do site novo me ajudou a fechar contratos maiores. Agora, fecho mais negócios com confiança."
+    name: "Sanatel Comunicação Visual",
+    role: "Empresa Gráfica em Brasília DF",
+    quote: "A GBS Digital transformou a presença da minha empresa nas redes de pesquisa, antes eu estava perdendo negócios importantes porque não tinha um site, agora tenho meu site e uma equipe profissional me dando supporte"
   },
   {
-    name: "Mariana Costa",
-    role: "Vendedora Independente",
-    quote: "Eu tentava fazer sozinha e perdia clientes. Com o site da GBS, meus produtos ganharam uma vitrine profissional. O retorno foi imediato, estou muito feliz!"
+    name: "Michael Cardoso Silva",
+    role: "Vendedor da A3 Comunicação",
+    quote: "Estava precisando muito de uma landing page para anunciar meu trabalho, conheci o Brunno da GBS Digital, conversamos e chegamos a um acordo. Hoje estou rodando tráfego pago na minhaa página e minhas vendas aumentaram muito, só tenho a agradecer",
+    image: "/assets/images/michael-cardoso.jpg"
   },
   {
     name: "Carlos Eduardo",
@@ -37,14 +38,22 @@ export const Testimonials: React.FC = () => {
             <div key={index} className="bg-gbs-black p-8 rounded-2xl relative border border-white/5 shadow-lg">
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                  <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
               <p className="text-gray-300 text-lg italic mb-6">"{testimonial.quote}"</p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-xl font-bold text-white">
+                {testimonial.image ? (
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover border-2 border-gbs-green"
+                  />
+                ) : (
+                  <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-xl font-bold text-white">
                     {testimonial.name.charAt(0)}
-                </div>
+                  </div>
+                )}
                 <div>
                   <h4 className="font-bold text-white">{testimonial.name}</h4>
                   <p className="text-sm text-gbs-green">{testimonial.role}</p>
@@ -53,9 +62,9 @@ export const Testimonials: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="text-center">
-            <Button text="Quero Resultados Como Estes" variant="outline" />
+          <Button text="Quero Resultados Como Estes" variant="outline" />
         </div>
       </div>
     </section>

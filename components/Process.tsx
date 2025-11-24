@@ -33,19 +33,19 @@ export const Process: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Como Funciona Nossa <br/>
-              <span className="text-gbs-green">Criação de Sites</span>
+              Criamos o seu site em <br />
+              <span className="text-gbs-green">Tempo Record</span>
             </h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              Liberte-se da frustração de sites amadores e abrace o sucesso profissional. Nosso processo é otimizado para quem não tem tempo a perder.
+              Não espere mais para ter um site totalmente profissional e com poder de converter o usuário em Cliente Real para sua Empresa.
             </p>
-            
+
             <div className="bg-gbs-card p-6 rounded-xl border-l-4 border-gbs-green mb-8">
-              <p className="text-white font-medium">
-                "Evite meses de espera – ganhe tempo e vantagem competitiva imediata no seu mercado."
+              <p className="text-white font-medium italic">
+                "Não perca seus clientes para a concorrência por não ter um site profissional, entre em contato agora mesmo para ter seu site no ar."
               </p>
             </div>
 
