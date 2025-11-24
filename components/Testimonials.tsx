@@ -7,7 +7,8 @@ const testimonials: Testimonial[] = [
   {
     name: "Sanatel Comunicação Visual",
     role: "Empresa Gráfica em Brasília DF",
-    quote: "A GBS Digital transformou a presença da minha empresa nas redes de pesquisa, antes eu estava perdendo negócios importantes porque não tinha um site, agora tenho meu site e uma equipe profissional me dando supporte"
+    quote: "A GBS Digital transformou a presença da minha empresa nas redes de pesquisa, antes eu estava perdendo negócios importantes porque não tinha um site, agora tenho meu site e uma equipe profissional me dando supporte",
+    image: "/assets/images/sanatel-logo.png"
   },
   {
     name: "Michael Cardoso Silva",
