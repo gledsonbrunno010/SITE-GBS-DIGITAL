@@ -53,10 +53,10 @@ export const Benefits: React.FC = () => {
           {benefitsList.map((benefit, index) => (
             <div
               key={index}
-              className="bg-gbs-card p-8 rounded-2xl border border-white/5 hover:border-gbs-green/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(34,197,94,0.2)] group"
+              className="bg-gbs-card p-8 rounded-2xl border border-gbs-green/50 md:border-white/5 -translate-y-2 md:translate-y-0 shadow-[0_10px_30px_-10px_rgba(34,197,94,0.2)] md:shadow-none md:hover:border-gbs-green/50 transition-all duration-300 md:hover:-translate-y-2 md:hover:shadow-[0_10px_30px_-10px_rgba(34,197,94,0.2)] group"
             >
-              <div className="bg-gbs-black w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gbs-green transition-colors duration-300">
-                <benefit.icon className="w-7 h-7 text-gbs-green group-hover:text-black" />
+              <div className="bg-gbs-green md:bg-gbs-black w-14 h-14 rounded-lg flex items-center justify-center mb-6 md:group-hover:bg-gbs-green transition-colors duration-300">
+                <benefit.icon className="w-7 h-7 text-black md:text-gbs-green md:group-hover:text-black" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
               <p className="text-gray-400 leading-relaxed">{benefit.description}</p>

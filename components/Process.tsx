@@ -43,6 +43,15 @@ export const Process: React.FC = () => {
               Não espere mais para ter um site totalmente profissional e com poder de converter o usuário em Cliente Real para sua Empresa.
             </p>
 
+            {/* Office scene image */}
+            <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+              <img
+                src="/assets/images/process-office.png"
+                alt="Equipe GBS Digital trabalhando"
+                className="w-full h-auto"
+              />
+            </div>
+
             <div className="bg-gbs-card p-6 rounded-xl border-l-4 border-gbs-green mb-8">
               <p className="text-white font-medium italic">
                 "Não perca seus clientes para a concorrência por não ter um site profissional, entre em contato agora mesmo para ter seu site no ar."
