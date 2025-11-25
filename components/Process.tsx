@@ -32,16 +32,19 @@ export const Process: React.FC = () => {
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gbs-green/5 rounded-full blur-[100px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Criamos o seu site em <br />
+            <span className="text-gbs-green">Tempo Record</span>
+          </h2>
+          <p className="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto">
+            Não espere mais para ter um site totalmente profissional e com poder de converter o usuário em Cliente Real para sua Empresa.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 text-center">
-              Criamos o seu site em <br />
-              <span className="text-gbs-green">Tempo Record</span>
-            </h2>
-            <p className="text-gray-400 text-lg mb-8 leading-relaxed text-center">
-              Não espere mais para ter um site totalmente profissional e com poder de converter o usuário em Cliente Real para sua Empresa.
-            </p>
 
 
             {/* Office scene image */}
