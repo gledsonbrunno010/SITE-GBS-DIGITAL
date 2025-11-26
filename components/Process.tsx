@@ -71,11 +71,11 @@ export const Process: React.FC = () => {
 
           <div className="space-y-6">
             {steps.map((step, index) => (
-              <div key={index} className="flex items-start gap-6 group">
+              <div key={index} className="flex flex-row items-start text-left lg:flex-col lg:items-center lg:text-center gap-6 group">
                 <div className="flex-shrink-0 w-12 h-12 bg-gbs-dark rounded-full border border-white/10 flex items-center justify-center text-gbs-green font-bold text-xl group-hover:bg-gbs-green group-hover:text-black transition-all duration-300">
                   {step.number}
                 </div>
-                <div className="flex-1 bg-gbs-dark/50 p-6 rounded-xl hover:bg-gbs-dark transition-colors border border-transparent hover:border-white/5">
+                <div className="flex-1 bg-gbs-dark/50 p-6 rounded-xl hover:bg-gbs-dark transition-colors border border-transparent hover:border-white/5 w-full">
                   <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
                 </div>
