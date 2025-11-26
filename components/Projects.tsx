@@ -18,6 +18,11 @@ const projects = [
         image: '/assets/projects/project3.png',
         title: 'Projeto 3',
     },
+    {
+        id: 4,
+        image: '/assets/projects/project4.png',
+        title: 'Projeto 4',
+    },
 ];
 
 export function Projects() {
@@ -139,8 +144,8 @@ export function Projects() {
                                     setCurrentIndex(index);
                                 }}
                                 className={`w-3 h-3 rounded-full transition-all ${index === currentIndex
-                                        ? 'bg-gbs-green w-8'
-                                        : 'bg-white/50 hover:bg-white'
+                                    ? 'bg-gbs-green w-8'
+                                    : 'bg-white/50 hover:bg-white'
                                     }`}
                                 aria-label={`Go to slide ${index + 1}`}
                             />
